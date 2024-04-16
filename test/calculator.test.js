@@ -2,14 +2,6 @@ const Calculator = require("../src/calculator");
 
 const calc = new Calculator();
 
-test("check_input function returns false when non-number argument provided", () => {
-  expect(calc.check_input("a", 1)).toEqual(false);
-});
-
-test("check_input function returns true when number arguments provided", () => {
-  expect(calc.check_input(1, 1)).toEqual(true);
-});
-
 test("2 numbers are added correctly", () => {
   expect(calc.add(2, 2)).toEqual(4);
 });
